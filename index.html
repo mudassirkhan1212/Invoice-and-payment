@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Page Title -->
     <title>Invoice & Payment frontend</title>
-
-    <!-- SEO & Social Sharing -->
     <meta
       name="description"
       content="A clean and responsive frontend for generating invoices and managing payments."
@@ -19,17 +15,13 @@
       content="Generate invoices and manage payments easily."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="Mudassir.jpg"  />
-    <!-- Optional: for social sharing -->
+    <meta property="og:image" content="Mudassir.jpg" />
     <meta
       property="og:url"
       content="https://mudassirkhan1212.github.io/Invoice-and-payment/"
     />
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.PNG" type="image/x-icon" />
-
-    <!-- Fonts & Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,22 +30,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     />
-
-    <!-- Optional: Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.PNG" type="image/x-icon" />
   </head>
-
   <body>
- 
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
     <div class="container">
       <div class="row">
         <div class="col-md-8">
           <div class="invoice">
-            <!-- begin invoice-company -->
             <div class="invoice-company text-inverse f-w-600">
               <span class="pull-right hidden-print">
                 <a href="javascript:;" class="btn btn-sm btn-white m-b-10 p-l-5"
@@ -69,17 +52,14 @@
               </span>
               Mudassir, Inc
             </div>
-            <!-- end invoice-company -->
-            <!-- begin invoice-header -->
             <div class="invoice-header">
               <div class="invoice-from">
                 <small>from</small>
                 <address class="m-t-5 m-b-5">
                   <strong class="text-inverse">Madtech digtals.</strong><br />
-                 University Road.<br />
+                  University Road.<br />
                   Karachi.<br />
                   Phone: 0370-2906905<br />
-                  
                 </address>
               </div>
               <div class="invoice-to">
@@ -100,10 +80,7 @@
                 </div>
               </div>
             </div>
-            <!-- end invoice-header -->
-            <!-- begin invoice-content -->
             <div class="invoice-content">
-              <!-- begin table-responsive -->
               <div class="table-responsive">
                 <table class="table table-invoice">
                   <thead>
@@ -157,8 +134,6 @@
                   </tbody>
                 </table>
               </div>
-              <!-- end table-responsive -->
-              <!-- begin invoice-price -->
               <div class="invoice-price">
                 <div class="invoice-price-left">
                   <div class="invoice-price-row">
@@ -179,10 +154,7 @@
                   <small>TOTAL</small> <span class="f-w-600">$10,171.10</span>
                 </div>
               </div>
-              <!-- end invoice-price -->
             </div>
-            <!-- end invoice-content -->
-            <!-- begin invoice-note -->
             <div class="invoice-note">
               * Make all cheques payable to Mudassir<br />
               * Payment is due within 30 days<br />
@@ -192,8 +164,6 @@
               * Email: mudassirkhan12120@gmail.com <br />
               * phone: +92 332 2444093
             </div>
-            <!-- end invoice-note -->
-            <!-- begin invoice-footer -->
             <div class="invoice-footer">
               <p class="text-center m-b-5 f-w-600">
                 THANK YOU FOR YOUR BUSINESS
@@ -212,7 +182,6 @@
                 >
               </p>
             </div>
-            <!-- end invoice-footer -->
           </div>
         </div>
 
@@ -230,7 +199,8 @@
                     id="fname"
                     name="firstname"
                     placeholder="John M. Doe"
-                  required/>
+                    required
+                  />
                   <label for="email"
                     ><i class="fa fa-envelope"></i> Email</label
                   >
@@ -239,7 +209,8 @@
                     id="email"
                     name="email"
                     placeholder="john@example.com"
-                  required/>
+                    required
+                  />
                   <label for="adr"
                     ><i class="fa fa-address-card-o"></i> Address</label
                   >
@@ -248,7 +219,8 @@
                     id="adr"
                     name="address"
                     placeholder="542 W. 15th Street"
-                  required/>
+                    required
+                  />
                   <label for="city"
                     ><i class="fa fa-institution"></i> City</label
                   >
@@ -257,11 +229,8 @@
                     id="city"
                     name="city"
                     placeholder="New York"
-                 required />
-                  <!-- <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
-                  <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001"> -->
+                    required
+                  />
                   <div class="row">
                     <div class="col">
                       <label for="state">State</label>
@@ -270,7 +239,8 @@
                         id="state"
                         name="state"
                         placeholder="NY"
-                    required  />
+                        required
+                      />
                     </div>
                     <div class="col">
                       <label for="zip">Zip</label>
@@ -279,7 +249,8 @@
                         id="zip"
                         name="zip"
                         placeholder="10001"
-                     required />
+                        required
+                      />
                     </div>
                   </div>
                 </div>
@@ -299,21 +270,24 @@
                     id="cname"
                     name="cardname"
                     placeholder="John More Doe"
-                required  />
+                    required
+                  />
                   <label for="ccnum">Credit card number</label>
                   <input
                     type="text"
                     id="ccnum"
                     name="cardnumber"
                     placeholder="1111-2222-3333-4444"
-                required  />
+                    required
+                  />
                   <label for="expmonth">Exp Month</label>
                   <input
                     type="text"
                     id="expmonth"
                     name="expmonth"
                     placeholder="September"
-                required  />
+                    required
+                  />
                   <div class="row">
                     <div class="col">
                       <label for="expyear">Exp Year</label>
@@ -322,7 +296,8 @@
                         id="expyear"
                         name="expyear"
                         placeholder="2018"
-                 required     />
+                        required
+                      />
                     </div>
                     <div class="col">
                       <label for="cvv">CVV</label>
@@ -331,7 +306,8 @@
                         id="cvv"
                         name="cvv"
                         placeholder="352"
-                   required   />
+                        required
+                      />
                     </div>
                   </div>
                 </div>
@@ -346,7 +322,5 @@
         </div>
       </div>
     </div>
-
   </body>
 </html>
-
