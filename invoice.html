@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <style>
+   
+      h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        color: rgb(88 105 189);
+        font-weight: 700;
+      }
+      .sec1 h2 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 7px;
+        text-transform: capitalize;
+      }
+      .sec2 h2 {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 7px;
+        text-transform: capitalize;
+        color: rgb(122 132 181);
+      }
+
+      .sec1 p {
+        font-weight: 500;
+        line-height: 5px;
+        text-transform: capitalize;
+      }
+      .sec2 p {
+        font-weight: 500;
+        line-height: 5px;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+      .sec2p p {
+        font-weight: 500;
+        line-height: 14px;
+        text-transform: capitalize;
+        font-size: 14px;
+        text-align: right;
+      }
+
+      .secnew h2 {
+        font-size: 19px;
+        font-weight: 700;
+        padding-bottom: 0px;
+        text-transform: capitalize;
+        color: rgb(122 132 181);
+        line-height: 20px;
+      }
+      .sec1 {
+        padding: 15px 0px;
+      }
+      .sec3 {
+        text-align: right;
+        padding-top: 20px;
+      }
+      .sec3 p {
+        font-weight: 500;
+        line-height: 15px;
+        text-transform: capitalize;
+      }
+      .sec3 h2 {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 7px;
+        text-transform: capitalize;
+        color: rgb(122 132 181);
+      }
+      .detail {
+        padding-bottom: 50px;
+        padding-top: 50px;
+      }
+      th {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 7px;
+        text-transform: capitalize;
+        color: rgb(255 255 255);
+        border-top: 2px solid rgb(223 222 222);
+        border-bottom: 2px solid rgb(223 222 222);
+        background: rgb(122 132 181);
+        padding: 10px;
+      }
+      table {
+        border: 1px solid rgb(223 222 222);
+        /* padding: 10px; */
+        padding: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+          0 6px 12px rgba(0, 0, 0, 0.08);
+      }
+      .invoice {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+          0 6px 12px rgba(0, 0, 0, 0.08);
+        padding-left: 70px;
+        padding-right: 30px;
+        margin: 40px 0px;
+        background-image: url("V483-2\ -\ Edited.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1200px;
+      }
+      .in {
+        padding: 40px 0px;
+      }
+      td {
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: capitalize;
+        padding: 5px 0px;
+        text-align: right;
+        border-top: 2px solid rgb(223 222 222);
+        padding: 10px;
+        border-bottom: 2px solid rgb(223 222 222);
+      }
+      th {
+        text-align: right;
+      }
+      .left {
+        text-align: left;
+      }
+      .image {
+        background-image: url("link.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+      }
+    </style>
+    <section class="invoice-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 invoice">
+            <section class="in">
+              <div class="container">
+                <h1>invoice</h1>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="sec1">
+                      <h2>john smith</h2>
+                      <p>4490 oak drive</p>
+                      <p>albany, NY 12210</p>
+                    </div>
+                  </div>
+                  <div class="col-md-9 image"></div>
+                </div>
+                <div class="row detail" class="">
+                  <div class="col-md-3">
+                    <div class="sec2">
+                      <h2>bill to</h2>
+                      <p>jessie m home</p>
+                      <p>4312 wood road</p>
+                      <p>newyork, NY 10031</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="sec2">
+                      <h2>ship to</h2>
+                      <p>jessie m home</p>
+                      <p>2019, redbud drive</p>
+                      <p>newyork, NY 10011</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="secnew">
+                      <h2>INVOICE#</h2>
+                      <h2>INVOICE DATE</h2>
+                      <h2>P.O.#</h2>
+                      <h2>DUE DATE</h2>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="sec2p">
+                      <p>INT-001</p>
+                      <p>11/02/2019</p>
+                      <p>2412/2019</p>
+                      <p>26/02/2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div>
+                      <table style="width: 100%">
+                        <tr>
+                          <th class="left">qty</th>
+                          <th style="text-align: center">description</th>
+                          <th>unit price</th>
+                          <th>amount</th>
+                        </tr>
+                        <tr>
+                          <td class="left">1</td>
+                          <td class="left">front and rear brake cables</td>
+                          <td>100.00</td>
+                          <td>100.00</td>
+                        </tr>
+                        <tr>
+                          <td class="left">2</td>
+                          <td class="left">New set of pedal arms</td>
+                          <td>50.00</td>
+                          <td>50.00</td>
+                        </tr>
+                        <tr>
+                          <td class="left">3</td>
+                          <td class="left">Labor 3 hr</td>
+                          <td>15.00</td>
+                          <td>45.00</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3">
+                    <div class="sec3">
+                      <p>subtotal</p>
+                      <p>sales tax 5.0%</p>
+                      <h2>total</h2>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="sec3">
+                      <p>195.00</p>
+                      <p>9.50</p>
+                      <h2>$204.75</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <style>
+              footer {
+                padding-bottom: 25px;
+                padding-top: 200px;
+              }
+              .sec4 {
+                padding-bottom: 20px;
+              }
+              .sec4 h2 {
+                font-size: 18px;
+                font-weight: bold;
+                padding-bottom: 7px;
+                text-transform: capitalize;
+                color: rgb(122 132 181);
+              }
+              .sec4 p {
+                font-weight: 500;
+                line-height: 5px;
+                text-transform: capitalize;
+                font-size: 13px;
+              }
+            </style>
+            <footer>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="sec4">
+                      <h2>terms and conditions</h2>
+                      <p>payment is due within 15 days</p>
+                    </div>
+                    <div class="sec4">
+                      <p>bank name</p>
+                      <p>account number</p>
+                      <p>routing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="col-md-4">
+            <!-- <div class="containe">
+              <h4>
+                Cart
+                <span class="price" style="color: black"
+                  ><i class="fa fa-shopping-cart"></i> <b>4</b></span
+                >
+              </h4>
+              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+              <hr />
+              <p>
+                Total <span class="price" style="color: black"><b>$30</b></span>
+              </p>
+            </div> -->
+           <div class="containe">
+      <form action="">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+ <!-- <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+                  <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001"> -->
+            <div class="row">
+              <div class="col">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-containe">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+   .containe {
+    margin: 40px 0px;
+    background-color: #f2f2f2;
+    padding: 13px 30px 13px 30px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+      span.price {
+    float: right;
+    color: grey;
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+input[type=text] {
+    width: 100%;
+    margin-bottom: 19px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+    </style>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
